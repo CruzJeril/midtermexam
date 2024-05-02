@@ -1,15 +1,40 @@
 .App {
   box-sizing: border-box;
   text-align: center;
-  min-height: 100vh;
 }
 
-.Cruz {
-  border: 2px solid #505050;
-  width: 500px;
-  height: 500px;
-  display: flex;
+.CalcContainer {
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(to top, #1a1d23, #2f4f7f); /* darker blue to lighter blue gradient */
+}
+
+.CalcDisplay {
+  border: 1px solid #1a1d23; /* dark blue border */
+  margin-bottom: 20px;
+  padding: 5px;
+  height: 40px;
+  font-size: 2em;
+  text-align: right;
+  background-color: #1a1d23; /* dark blue background */
+  color: white;
+  border-radius: 10px;
+}
+
+.ButtonContainer {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.ButtonContainer > button {
   justify-content: center;
-  align-items: center;
-  background-color: red;
+  border: 1px solid #1a1d23; /* dark blue border */
+  padding: 7px;
+  color: white;
+  font-size: 2em;
+  background: linear-gradient(to top, #1a1d23, #2f4f7f); /* darker blue to lighter blue gradient */
+  border-radius: 10px;
 }
